@@ -1,6 +1,6 @@
-// sequelize
-import { Sequelize } from 'sequelize';
-import { Sequelize as TSequelize, Dialect } from 'sequelize/types';
+// Sequelize
+import { Sequelize } from 'sequelize'
+import { Sequelize as TSequelize } from 'sequelize/types'
 
 // Envs, Configs
 import {
@@ -9,10 +9,8 @@ import {
     DB_USER,
     DB_PASS,
     DB_PORT,
-    DB_DIALECT,
-} from '@envs/index';
-
-console.log(DB_NAME(), DB_USER(), DB_PASS());
+    DB_DIALECT
+} from '@envs/index'
 
 export const sequelize: TSequelize = new Sequelize(
     DB_NAME(),
@@ -21,6 +19,6 @@ export const sequelize: TSequelize = new Sequelize(
     {
         host: DB_HOST(),
         dialect: DB_DIALECT(),
-        port: DB_PORT(),
-    },
-);
+        port: DB_PORT()
+    }
+)
