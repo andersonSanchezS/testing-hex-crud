@@ -20,5 +20,7 @@ export const sequelize: TSequelize = new Sequelize(
         host: DB_HOST(),
         dialect: DB_DIALECT(),
         port: DB_PORT()
-    }
+    },
 )
+
+

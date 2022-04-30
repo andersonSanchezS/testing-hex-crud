@@ -35,6 +35,12 @@
       "@dataSources/*": [
         "./dataSources/*"
       ],
+      "@log/*": [
+        "./dataSources/lib/sequelize/log/*"
+      ],
+      "@lib/*": [
+        "./dataSources/lib/sequelize/*"
+      ],
       "@sqlModels/*": [
         "./dataSources/lib/sequelize/models/*"
       ],

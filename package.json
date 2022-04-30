@@ -11,6 +11,8 @@
     "@rest": "src/api",
     "@core": "src/core",
     "@dataSources": "src/dataSources",
+    "@log": "src/dataSources/lib/sequelize/log",
+    "@lib": "src/dataSources/lib/sequelize",
     "@sqlModels": "src/dataSources/lib/sequelize/models",
     "@envs": "src/env",
     "@errors": "src/errors",
