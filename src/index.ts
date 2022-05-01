@@ -11,18 +11,8 @@ import cors from 'cors'
 import 'module-alias/register'
 
 // Custom Imports
-import { sequelize } from '@dataSources/lib/sequelize/db'
 import { REST_PORT, API_VERSION } from './env'
 
-// Database Connection
-sequelize
-    .authenticate()
-    .then(() => {
-        console.log('Connection has been established successfully.')
-    })
-    .catch(err => {
-        console.error('Unable to connect to the database:', err.message)
-    })
 
 // Rest Api Routes
 import router from '@rest/index'

@@ -1,12 +1,12 @@
 import { Model } from 'sequelize'
 
 export interface IProject{
-    pIdAuto:number,
-    pId:string,
+    pIdAuto?:number,
+    pId?:string,
     pName:string,
     pPriority:number,
     pDescription:string,
-    pState:number,
+    pState?:number,
     createdAt?: Date
     updatedAt?: Date
     deletedAt?: Date
